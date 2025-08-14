@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kollektif:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #FF6B35;
+  --accent-color: #FFA500;
+  --background-light: #F5F5F5;
+  --text-dark: #333333;
+  --card-background: #FFFFFF;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --sidebar-width: 250px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kollektif', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Estilos para el landing page */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-container img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  background-color: var(--card-background);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  width: 100%;
+  max-width: 500px;
+}
+
+.card-container h1 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card-container p {
+  margin-bottom: 30px;
+}
+
+.role-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  display: block;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.buyer-button {
+  background-color: var(--primary-color);
+}
+
+.buyer-button:hover {
+  background-color: #D65A2E;
+}
+
+.supplier-button {
+  background-color: var(--accent-color);
+}
+
+.supplier-button:hover {
+  background-color: #D68400;
+}
+
+/* Estilos generales del dashboard */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: var(--background-light);
+  margin-left: var(--sidebar-width);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
