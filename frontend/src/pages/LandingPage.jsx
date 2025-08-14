@@ -5,7 +5,6 @@ const LandingPage = () => {
     return (
         <div className="landing-container">
             <div className="logo-container">
-                {/* Placeholder del logo. Puedes reemplazar la URL de la imagen. */}
                 <img src="https://via.placeholder.com/150/FF6B35/FFFFFF?text=CDI+Logo" alt="CDI Logo" />
             </div>
             <div className="card-container">

@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import BuyerDashboard from './pages/BuyerDashboard';
-import SupplierDashboard from './pages/SupplierDashboard';
+import LandingPage from './pages/LandingPage.jsx';
+import BuyerDashboard from './pages/BuyerDashboard.jsx';
+import SupplierDashboard from './pages/SupplierDashboard.jsx';
 import './styles.css';
 
 function App() {
@@ -10,9 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* Rutas anidadas para el Comprador */}
         <Route path="/buyer/*" element={<BuyerDashboard />} />
-        {/* Rutas anidadas para el Proveedor */}
         <Route path="/supplier/*" element={<SupplierDashboard />} />
       </Routes>
     </Router>
