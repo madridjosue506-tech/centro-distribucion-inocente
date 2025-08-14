@@ -1,7 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react({
+      // Esto le dice a Vite que procese archivos .js como JSX
+      jsx: 'react-jsx',
+    }),
+  ],
+  server: {
+    open: true,
+    port: 3000,
+  },
+});
