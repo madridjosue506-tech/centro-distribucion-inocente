@@ -1,5 +1,5 @@
 const Order = require('../models/Order');
-const User = require('../models('../models/User'));
+const User = require('../models/User');
 
 // @route   GET api/supplier/dashboard
 // @desc    Obtener datos para el dashboard del proveedor
